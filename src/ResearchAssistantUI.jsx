@@ -129,7 +129,7 @@ export default function ResearchAssistantUI() {
           <div className="mb-8 flex items-center gap-3">
             <div className="flex h-11 w-11 items-center justify-center rounded-2xl overflow-hidden bg-white shadow-sm">
               <img 
-                src="/Fabscholar.png" 
+                src={`${import.meta.env.BASE_URL}Fabscholar.png`} 
                 alt="Fabscholar logo" 
                 className="h-full w-full object-contain" 
               />
@@ -217,8 +217,8 @@ export default function ResearchAssistantUI() {
             className="flex-1 space-y-5 overflow-y-auto bg-cover bg-center px-5 py-6 md:px-8"
             style={{
               backgroundImage: isDark
-              ? "linear-gradient(rgba(7,17,31,0.82), rgba(7,17,31,0.82)), url('/background.png')"
-              : "linear-gradient(rgba(255,255,255,0.82), rgba(255,255,255,0.82)), url('/background.png')",
+                ? `linear-gradient(rgba(7,17,31,0.82), rgba(7,17,31,0.82)), url('${import.meta.env.BASE_URL}background.png')`
+                : `linear-gradient(rgba(255,255,255,0.82), rgba(255,255,255,0.82)), url('${import.meta.env.BASE_URL}background.png')`,
             }}
           >
             <div className={cn("mx-auto max-w-3xl rounded-3xl border p-5", theme.cardSoft)}>
