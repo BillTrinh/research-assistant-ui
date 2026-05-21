@@ -135,7 +135,7 @@ export default function ResearchAssistantUI() {
               />
             </div>
             <div>
-              <h1 className={cn("text-base font-semibold tracking-tight", theme.title)}>Fabscholar</h1>
+              <h1 className={cn("text-base font-semibold tracking-tight", theme.title)}>FabScholar</h1>
               <p className={cn("text-xs", theme.muted)}>Multi-Agent Research Assistant</p>
             </div>
           </div>
